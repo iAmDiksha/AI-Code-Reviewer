@@ -1,0 +1,7 @@
+for frontend 
+	
+for code themes in input... npm i prismjs
+for code editor... npm i react-simple-code-editor
+for api fetch... npm i axios
+for output formatting... npm i react-markdown
+for good code snippets in ouput... npm i rehype-highlight

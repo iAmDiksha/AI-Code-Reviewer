@@ -1,0 +1,91 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,body, #root{
+  height: 100%;
+  width: 100%;
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #212830;
+  color: #c6cdd5;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+main{
+  height: 95%;
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.center{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+main .left, main .right{
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+}
+
+main .left{
+  background-color: #141b23;
+  position: relative;
+}
+
+.left .code, .code pre, .code pre code{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 0.7rem;
+  background: #141b23;
+}
+
+main .right{
+  background-color: #343434;
+  padding: 1rem 2rem;
+  overflow: auto;
+}
+
+
+main .left .review{
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  background-color: #f16755;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s;
+  font-size: 16px;
+  border: none;
+  width: 200px;
+}
+
+main .left .review:active{
+  transform: scale(0.98);
+}
+
+main .left .review:hover{
+  background-color: #de7a6c;
+}
+
+main .left .review:disabled{
+  background-color: rgb(80, 80, 80);
+  transition: none;
+  transform: none;
+  cursor: default;
+}
